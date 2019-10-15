@@ -15,9 +15,11 @@ public class InputHandler : MonoBehaviour
         keySpace = new PerformJump();
         keyQ = new PerformKick();
         keyR = new PerformPunch();
-        keyW = new DoNothing();
+        keyW = new PerformWalk();
         keyE = new DoNothing();
         anim = actor.GetComponent<Animator>();
+
+        Camera.main.GetComponent<CameraFollow360>().player = actor.transform;
     }
 
     private void Update()
