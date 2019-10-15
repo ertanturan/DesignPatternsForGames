@@ -8,11 +8,13 @@ public class InputHandler : MonoBehaviour
 
     private Animator anim;
 
-    private Command keyQ, keyW, keyE;
+    private Command keyQ, keyW, keyE, keySpace, keyR;
 
     private void Start()
     {
-        keyQ = new PerformJump();
+        keySpace = new PerformJump();
+        keyQ = new PerformKick();
+        keyR = new PerformPunch();
         keyW = new DoNothing();
         keyE = new DoNothing();
         anim = actor.GetComponent<Animator>();
@@ -21,18 +23,27 @@ public class InputHandler : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            keyQ.Execute(anim);
+            keySpace.Execute(anim);
         }
-        else if(Input.GetKeyDown(KeyCode.E))
+        else if (Input.GetKeyDown(KeyCode.E))
         {
             keyE.Execute(anim);
         }
-        else if(Input.GetKeyDown(KeyCode.W))
+        else if (Input.GetKeyDown(KeyCode.W))
         {
             keyW.Execute(anim);
         }
+        else if (Input.GetKeyDown(KeyCode.R))
+        {
+            keyR.Execute(anim);
+        }
+        else if (Input.GetKeyDown(KeyCode.Q))
+        {
+            keyQ.Execute(anim);
+        }
+
 
     }
 }
