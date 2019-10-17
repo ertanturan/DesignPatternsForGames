@@ -8,4 +8,9 @@ public class PerformWalk : Command
     {
         anim.SetTrigger("isWalking");
     }
+
+    public override void Undo(Animator anim)
+    {
+        anim.SetTrigger("isWalkingR");
+    }
 }

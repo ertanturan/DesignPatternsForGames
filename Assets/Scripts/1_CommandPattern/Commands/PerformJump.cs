@@ -10,4 +10,8 @@ public class PerformJump : Command
         anim.SetTrigger("isJumping");
     }
 
+    public override void Undo(Animator anim)
+    {
+        anim.SetTrigger("isJumpingR");
+    }
 }

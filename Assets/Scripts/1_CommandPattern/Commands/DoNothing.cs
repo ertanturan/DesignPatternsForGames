@@ -8,4 +8,9 @@ public class DoNothing : Command
     {
 
     }
+
+    public override void Undo(Animator anim)
+    {
+        
+    }
 }

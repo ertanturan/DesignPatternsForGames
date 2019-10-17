@@ -6,4 +6,9 @@ public class PerformKick : Command
     {
         anim.SetTrigger("isKicking");
     }
+
+    public override void Undo(Animator anim)
+    {
+        anim.SetTrigger("isKickingR");
+    }
 }

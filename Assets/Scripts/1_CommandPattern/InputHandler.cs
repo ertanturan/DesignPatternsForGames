@@ -74,7 +74,7 @@ public class InputHandler : MonoBehaviour
             _oldCommands.Insert(0,keySpace);
         }
 
-        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.Z))
+        if ( Input.GetKeyDown(KeyCode.Z))
         {
             UndoLastCommand();
         }
@@ -103,7 +103,7 @@ public class InputHandler : MonoBehaviour
         if (_oldCommands.Count > 0)
         {
             Command c = _oldCommands[0];
-            c.Execute(anim);
+            c.Undo(anim);
             _oldCommands.RemoveAt(0);
         }
     }

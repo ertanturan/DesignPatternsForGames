@@ -6,4 +6,9 @@ public class PerformPunch : Command
     {
         anim.SetTrigger("isPunching");
     }
+
+    public override void Undo(Animator anim)
+    {
+        anim.SetTrigger("isPunchingR");
+    }
 }
