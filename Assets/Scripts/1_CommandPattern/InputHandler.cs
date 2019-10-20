@@ -29,7 +29,6 @@ public class InputHandler : MonoBehaviour
         keyE = new DoNothing();
         anim = actor.GetComponent<Animator>();
 
-        Camera.main.GetComponent<CameraFollow360>().player = actor.transform;
     }
 
     private void Update()
