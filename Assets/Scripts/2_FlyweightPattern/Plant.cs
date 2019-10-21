@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Plant : MonoBehaviour
 {
@@ -9,17 +6,30 @@ public class Plant : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (LayerChecker(other.gameObject))
-        {
-            SetPlantInfo.Instance.SetInfo(_info);
-        }
+
+        SetInfoOnLayer(other.gameObject);
     }
 
     private void OnCollisionEnter(Collision other)
     {
+        SetInfoOnLayer(other.gameObject);
+    }
+
+    private void SetInfoOnLayer(GameObject other)
+    {
         if (LayerChecker(other.gameObject))
         {
             SetPlantInfo.Instance.SetInfo(_info);
+            TriggerOnThreat();
+        }
+
+    }
+
+    private void TriggerOnThreat()
+    {
+        if (_info.Threat == THREAT.High)
+        {
+            PlayerController.dead = true;
         }
     }
 
