@@ -498,10 +498,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CombatJane
       objectReference: {fileID: 0}
-    - target: {fileID: 1856188514370210, guid: 2d70c42586e2a4993ab0c98d4f4658cc, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 4580229927943822, guid: 2d70c42586e2a4993ab0c98d4f4658cc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 859.41376
@@ -1544,7 +1540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlantInfoPanel: {fileID: 2014324177}
-  PlantIcon: {fileID: 1093847273}
+  PlantIcon: {fileID: 1093847275}
   PlaneName: {fileID: 275973037}
   ThreatLevel: {fileID: 616969393}
 --- !u!114 &1442756475

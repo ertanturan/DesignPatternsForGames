@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 840734342857592512}
   - component: {fileID: 840734342854201056}
   - component: {fileID: 840734342855167008}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: VegetationMedium03_LOD02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 840734342857592514}
   - component: {fileID: 840734342854201058}
   - component: {fileID: 840734342855167010}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: VegetationMedium03_LOD01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 840734342857592516}
   - component: {fileID: 840734342854201060}
   - component: {fileID: 840734342855167012}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: VegetationMedium03_LOD00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 7572252480026948681}
   - component: {fileID: 686428977865913226}
   - component: {fileID: 4881262911416926818}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840734342857102054}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
