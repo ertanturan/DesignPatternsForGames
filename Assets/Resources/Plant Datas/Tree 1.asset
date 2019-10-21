@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545169dd36e8f974db3e64110151c566, type: 3}
   m_Name: Tree 1
   m_EditorClassIdentifier: 
-  plantName: 
-  plantThreat: 0
-  Icon: {fileID: 0}
+  plantName: Sleeping Pokeroot
+  plantThreat: 1
+  Icon: {fileID: 2800000, guid: d8421f6eb0bf64ae1903dad405189235, type: 3}

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545169dd36e8f974db3e64110151c566, type: 3}
   m_Name: Tree 5
   m_EditorClassIdentifier: 
-  plantName: 
-  plantThreat: 0
-  Icon: {fileID: 0}
+  plantName: Poisonous Stickweed
+  plantThreat: 3
+  Icon: {fileID: 2800000, guid: 19b6a5253ba02461f804c000197886ab, type: 3}
