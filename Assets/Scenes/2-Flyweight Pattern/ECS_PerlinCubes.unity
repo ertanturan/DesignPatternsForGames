@@ -224,8 +224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cube: {fileID: 3389597336981270574, guid: 2754ed06014648649834ecd89d6f2809, type: 3}
-  Rows: 500
-  Cols: 500
+  Rows: 1000
+  Cols: 1000
 --- !u!1 &1450787235
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,14 +319,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1450787235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9d821a6159bb4b299d01004e23dd4bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 775199515a1c6eb46a5c3688a0f0e87d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  distance: 10
-  height: 5
-  rotationDamping: 2
-  heightDamping: 2
+  speed: 10
+  rotationSpeed: 100
 --- !u!1 &1869901988
 GameObject:
   m_ObjectHideFlags: 0
